@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Designing-Assig-2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- (b) Write all the above styling in CSS in different file (.css) and link it to your webpage such
+that changes made in CSS file are immediately reflected on the page. Group paragraphs
+into single class and add styling information to the class in CSS. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Web Designing</h1>
+    <!--(A) Apply in-line CSS to change colors of certain text portion, bold, underline and italics
+certain words in your HTML web page. Also change background color of each paragraph
+using in-line CSS -->
+    <h3 class="sub-heading">Web development</h3>
+
+    <div class="taskab">
+      <p
+        style="background-color: lightgreen; padding: 12px; border-radius: 6px"
+      >
+        Web development is the work involved in developing a Web site for the
+        Internet (World Wide Web) or an intranet (a private network).[1] Web
+        development can range from developing a simple single static page of
+        plain text to complex Web-based Internet applications (Web apps),
+        electronic businesses, and social network services.
+        <em
+          >A more comprehensive list of tasks to which Web development commonly
+          refers, may include Web engineering, Web design,
+        </em>
+        <strong>(UI design)</strong>;
+        <em
+          >Web content development, client liaison, client-side/server-side
+          scripting, Web server and network security configuration, and
+          e-commerce development.</em
+        >
+        <strong>(UX design)</strong>; and search engine optimization. Often many
+        individuals will work in teams <span style="color: red;">covering different aspects of the design
+          process, although some designers will cover them all</span>.
+      </p>
+    <!-- (C) Create a simple form to submit user input like his name, age, address and favorite subject,
+movie and singer -->
+    <hr />
+    <div class="taskc">
+      <h3 class="sub-heading">Task (C)</h3>
+      <form action="./index.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name" />
+        <br />
+        <label for="age">Age (between 10 & 70):</label>
+        <input type="number" name="age" placeholder="Age" min="10" max="70" />
+        <br />
+        <label for="address">Address: </label>
+        <input type="text" name="address" placeholder="Address" />
+        <br />
+        <label for="subject"> Favorite Subject:</label>
+        <input type="text" name="subject" placeholder="Subject" />
+        <br />
+        <label for="movie">Favorite Movie:</label>
+        <input type="text" name="movie" placeholder="Movie" /><br />
+        <label for="singer">Favorite Singer:</label>
+        <input type="text" name="singer" placeholder="Singer" />
+        <br />
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- (e) Create a registration form. Put validation checks on values entered by the user using
+JavaScript. -->
+    <hr />
+    <div id="taske">
+      <h3 class="sub-heading">Task (E)</h3>
+      <div class="numbox">
+        <label
+          style="font-weight: bold; font-size: 20px; margin-right: 20px"
+          for=""
+          >What is:
+        </label>
+        <p class="num1">0</p>
+        <p class="op">+</p>
+        <p class="num2">0</p>
+      </div>
+      <form>
+        <p id="result">Result:</p>
+        <label for="ans">Type your Answer:</label><br />
+        <input type="text" name="ans" id="ans" />
+        <input class="btn ansbtn" type="button" value="Check" />
+        <input class="btn reset" type="button" value="Clear" />
+      </form>
+    </div>
+    <hr />
+    <div class="" id="taski">
+      <h3 class="sub-heading">Redirect</h3>
+      <br />
+      <a href="./newpage.html"
+        ><input class="btn" type="button" value="Submit"
+      /></a>
+    </div>
+    <!-- (d) Add few form elements such as radio buttons, check boxes and password field. Add a
+submit button at last -->
+    <div id="taskd">
+      <h3 class="sub-heading">Task (D)</h3>
+      <form action="./index.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name" />
+        <br />
+        <label for="">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <label for="">Programing Language you know:</label>
+        <input type="checkbox" name="C++" value="C++" />
+        <label for="C++"> C++</label>
+        <input type="checkbox" id="Java" name="Java" value="Java" />
+        <label for="Java"> Java</label>
+        <input
+          type="checkbox"
+          id="Javascript"
+          name="Javascript"
+          value="Javascript"
+        />
+        <label for="Javascript"> Javascript</label> <br />
+        <label for="name">Email:</label>
+        <input type="email" name="email" placeholder="Email" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Password" />
+        <br />
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- (h) Write a JavaScript program to dynamically bold, italic and underline words and phrases
+based on user actions. -->
+    <div id="taskh">
+      <h3 class="sub-heading">Text Styling</h3>
+      <p style="font-size: 20px" class="changetxt">
+        Since the commercialization of the Web, Web development has been a
+        growing industry. The growth of this industry is being driven by
+        businesses wishing to use their Web site to advertise and sell products
+        and services to customers
+      </p>
+      <label style="font-size: 18px" for="">Make above Text to:</label>
+      <input class="boldbtn btn" type="button" value="Bold" />
+      <input class="italicbtn btn" type="button" value="Italic" />
+      <input class="underlinebtn btn" type="button" value="Underline" />
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
